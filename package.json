@@ -1,0 +1,9 @@
+{
+  "name": "react-native-mail",
+  "version": "6.1.12",
+  "description": "mail",
+  "main": "index.js",
+  "repository": "git@github.com:expansio/react-native-mail.git",
+  "author": "expansio",
+  "license": "MIT"
+}
