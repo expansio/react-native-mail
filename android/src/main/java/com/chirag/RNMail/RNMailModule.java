@@ -127,19 +127,7 @@ public class RNMailModule extends ReactContextBaseJavaModule {
     PackageManager manager = reactContext.getPackageManager();
     List<ResolveInfo> list = manager.queryIntentActivities(i, 0);
 
-    if (list == null || list.size() == 0) {
-      callback.invoke("not_available");
-      return;
-    }
-
-    if (list.size() == 1) {
-      i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-      try {
-        reactContext.startActivity(i);
-      } catch (Exception ex) {
-        callback.invoke("error");
-      }
-    } else {
+    
       String chooserTitle = "Send Mail";
 
       if (options.hasKey("customChooserTitle") && !options.isNull("customChooserTitle")) {
@@ -155,5 +143,5 @@ public class RNMailModule extends ReactContextBaseJavaModule {
         callback.invoke("error");
       }
     }
-  }
+  
 }
