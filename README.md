@@ -1,15 +1,18 @@
 # react-native-mail
 
+this is the version that maintained for handling a spesific bug.
+this lib was forked from the original react-native-mail was stopped up to date.
+
 A React Native wrapper for Apple's ``MFMailComposeViewController`` from iOS and Mail Intent on android
 Supports emails with attachments.
 
 ## Installation
 
 There was a breaking change in RN >=40. So for React Native >= 0.40: use v3.x and higher of this lib. otherwise use v2.x
-
+put this code below in your package.json manually
 ```bash
-npm i --save react-native-mail # npm syntax
-yarn add react-native-mail # yarn syntax
+"react-native-mail": "git+https://github.com/expansio/react-native-mail.git"
+yarn install # yarn syntax
 ```
 
 ### Automatic Installation
