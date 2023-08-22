@@ -11,7 +11,7 @@ Supports emails with attachments.
 There was a breaking change in RN >=40. So for React Native >= 0.40: use v3.x and higher of this lib. otherwise use v2.x
 
 
-add put the code below to your package.json manually
+add  the code below to your package.json manually
 ```bash
 "react-native-mail": "git+https://github.com/expansio/react-native-mail.git"
 yarn install # yarn syntax
